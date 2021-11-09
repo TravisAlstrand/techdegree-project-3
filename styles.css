@@ -9,9 +9,13 @@ body {
 }
 
 /* DRY */
-section,
-main,
+header,
 footer {
+    background-color: rgb(71, 80, 121);
+    padding: 1em 0 1em 0;
+}
+section,
+main {
     margin: 8px auto;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -23,7 +27,8 @@ footer {
     text-align: center;
 }
 header,
-button {
+button,
+footer {
     color: white;
 }
 ::placeholder,
@@ -32,9 +37,14 @@ footer {
 }
 input,
 select,
+textarea {
+    padding: 1em 1em;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+input,
+select,
 textarea,
 button {
-    padding: 0 1em;
     border: none;
     border-radius: 5px;
 }
@@ -45,6 +55,7 @@ select {
 }
 input,
 textarea {
+    font-size: 1.15rem;
     background-color: rgb(226, 226, 226);
 }
 input[type="checkbox"],
@@ -60,12 +71,22 @@ button {
     width: 100%;
     margin: 1rem 0;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    background-color: wheat;
+    border: 2px solid rgb(71, 80, 121);
+    transition-duration: 1s;
+}
+input:hover,
+select:hover,
+textarea:hover,
+button:hover {
+    cursor: pointer;
+}
 
 /* Elements */
-header {
-    background-color: rgb(71, 80, 121);
-    padding: 1em 0 1em 0;
-}
 section {
     padding-top: 1rem;
 }
@@ -88,11 +109,12 @@ textarea {
 }
 button {
     height: 3rem;
+    padding: 0 1em;
     background-color: rgb(102, 169, 180);
     font-size: 1.5rem;
     font-weight: bold;
 }
-::placeholder {
+input[required]::placeholder {
     text-align: right;
 }
 footer {
