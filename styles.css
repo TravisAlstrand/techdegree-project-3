@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: rgb(224, 219, 205);
+    color: rgb(71, 80, 121);
+}
+header,
+section,
+footer {
+    text-align: center;
+}
+header,
+button {
+    color: white;
+}
+::placeholder,
+footer {
+    font-style: italic;
+}
+header {
+    background-color: rgb(71, 80, 121);
+    padding: 1em 0 1em 0;
+}
+.bot_lrg_border {
+    padding-bottom: 2rem;
+    border-bottom: 5px solid rgb(71, 80, 121);
+}
+.top_border {
+    border-top: 2px solid rgb(71, 80, 121);
+}
+fieldset {
+    border: none;
+}
+.fieldset1 {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(71, 80, 121);
+}
+legend {
+    padding-top: 2rem;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+input,
+select,
+textarea,
+button,
+label {
+    margin-top: 1rem;
+}
+textarea {
+    height: 75px;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 0 1rem 1rem 0;
+}
+button {
+    height: 2.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(116, 191, 204);
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+
+}
+footer {
+    height: 200px;
+}
+.gray_text {
+    color:rgb(131, 131, 131);
+}
