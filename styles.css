@@ -1,8 +1,19 @@
-html {
+/* Set-Up */
+* {
     box-sizing: border-box;
+}
+body {
+    margin: 0;
     font-family: 'Merriweather Sans', sans-serif;
-    background-color: rgb(224, 219, 205);
     color: rgb(71, 80, 121);
+}
+
+/* DRY */
+section,
+main,
+footer {
+    margin: 8px 8px;
+    max-width: 800px;
 }
 header,
 section,
@@ -17,71 +28,87 @@ button {
 footer {
     font-style: italic;
 }
+input,
+select,
+textarea,
+button {
+    padding: 0 1em;
+    border: none;
+    border-radius: 5px;
+}
+.fs_info input,
+select {
+    height: 50px;
+    margin-bottom: 15px;
+}
+input,
+textarea {
+    background-color: rgb(226, 226, 226);
+}
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 1rem;
+}
+.form label,
+.bot-margin {
+    margin-bottom: 10px;
+}
+textarea,
+button {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/* Elements */
 header {
     background-color: rgb(71, 80, 121);
     padding: 1em 0 1em 0;
 }
-.bot_lrg_border {
-    padding-bottom: 2rem;
-    border-bottom: 5px solid rgb(71, 80, 121);
-}
-.top_border {
-    border-top: 2px solid rgb(71, 80, 121);
+section {
+    padding-top: 1rem;
 }
 fieldset {
     border: none;
 }
-.fieldset1 {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 2px solid rgb(71, 80, 121);
-}
 legend {
     padding-top: 2rem;
-    font-size: 1.25em;
+    border-top: 2px solid rgb(71, 80, 121);
+    font-size: 1.25rem;
     font-weight: bold;
 }
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-select,
 textarea {
-    height: 45px;
-    border: none;
-    border-radius: 5px;
-    background-color: white;
-}
-input,
-select,
-textarea,
-button,
-label {
-    margin-top: 1rem;
-}
-textarea {
-    height: 75px;
-    width: 100%;
-    margin: 1rem 0 1rem 0;
-}
-input[type="checkbox"],
-input[type="radio"] {
-    margin: 0 1rem 1rem 0;
+    height: 100px;
 }
 button {
-    height: 2.5rem;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(116, 191, 204);
+    height: 3rem;
+    background-color: rgb(102, 169, 180);
     font-size: 1.5rem;
     font-weight: bold;
-    
-
+}
+::placeholder {
+    text-align: right;
 }
 footer {
     height: 200px;
 }
+
+/* IDs */
+#zip {
+    max-width: 50%;
+}
+#plain_format {
+    margin-bottom: 2rem;
+}
+
+/* Classes */
 .gray_text {
     color:rgb(131, 131, 131);
+}
+.form .input_flex {
+    display: flex;
+    flex-direction: column;
+}
+.bot-border {
+    padding-bottom: 2rem;
+    border-bottom: 5px solid rgb(71, 80, 121);
 }
