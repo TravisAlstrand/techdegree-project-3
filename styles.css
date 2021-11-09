@@ -7,6 +7,13 @@ body {
     font-family: 'Merriweather Sans', sans-serif;
     color: rgb(71, 80, 121);
 }
+input, 
+textarea, 
+select {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
 
 /* DRY */
 header,
@@ -45,7 +52,7 @@ input,
 select,
 textarea,
 button {
-    border: none;
+    border: 2px solid transparent;
     border-radius: 5px;
 }
 .fs_info input,
